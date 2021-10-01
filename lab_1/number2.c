@@ -23,22 +23,22 @@ void main(void)
 	xor R14,R14
 	xor R15,R15
 	; Insert values in registers
-	mov R0, #0x0001
-	mov R1, #0x0002
-	mov R2, #0x0003
-	mov R3, #0x0004
-	mov R5, #0x0005
+	; mov R0, #0x0001
+	; mov R1, #0x0002
+	; mov R2, #0x0003
+	; mov R3, #0x0004
+	; mov R5, #0x0005
 	
-	add R0, R1
+	; add R0, R1
 	
-	mul R0, R2
+	; mul R0, R2
 	
-	mul R3, R5
+	; mul R3, R5
 	
-	mov MDL, R0
+	; mov MDL, R0
 
-	div R3
+	; div R3
 
-	mov R4, MDL
+	; mov R4, MDL
   }
 }

@@ -34,9 +34,8 @@ void main(void)
 	mul R0, R2
 	
 	mul R3, R5
-	
-	mov MDL, R0
 
+	mov MDL, R0
 	div R3
 
 	mov R4, MDL

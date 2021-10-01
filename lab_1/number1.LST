@@ -1,0 +1,76 @@
+C166 COMPILER V6.00, NUMBER1                                                               10/01/2021 10:38:29 PAGE 1   
+
+
+C166 COMPILER V6.00, COMPILATION OF MODULE NUMBER1
+OBJECT MODULE PLACED IN number1.OBJ
+COMPILER INVOKED BY: C:\Keil\C166\BIN\C166.EXE number1.c BROWSE MOD167 DEBUG
+
+ stmt lvl     source
+
+    1         #include <stdio.h>
+    2         #include <XC161.h>
+    3         #include <math.h>
+    4         
+    5         void main(void)
+    6         {
+    7  1        __asm
+    8  1        {
+    9  1              xor R0, R0
+   10  1              xor R1, R1
+   11  1              xor R2, R2
+   12  1              xor R3, R3
+   13  1              xor R4, R4
+   14  1              xor R5, R5
+   15  1              xor R6, R6
+   16  1              xor R7, R7
+   17  1              xor R8, R8
+   18  1              xor R9, R9
+   19  1              xor R10,R10
+   20  1              xor R11,R11
+   21  1              xor R12,R12
+   22  1              xor R13,R13
+   23  1              xor R14,R14
+   24  1              xor R15,R15
+   25  1              ; Insert values in registers
+   26  1              mov R0, #0x0001
+   27  1              mov R1, #0x0002
+   28  1              mov R2, #0x0003
+   29  1              mov R3, #0x0004
+   30  1              mov R5, #0x0005
+   31  1              
+   32  1              add R0, R1
+   33  1              
+   34  1              mul R0, R2
+   35  1              
+   36  1              mul R3, R5
+   37  1              
+   38  1              mov MDL, R0
+   39  1      
+   40  1              div R3
+   41  1      
+   42  1              mov R4, MDL
+   43  1        }
+   44  1      }
+
+
+MODULE INFORMATION:   INITIALIZED  UNINITIALIZED
+  CODE SIZE        =          60     --------
+  NEAR-CONST SIZE  =    --------     --------
+  FAR-CONST SIZE   =    --------     --------
+  HUGE-CONST SIZE  =    --------     --------
+  XHUGE-CONST SIZE =    --------     --------
+  NEAR-DATA SIZE   =    --------     --------
+  FAR-DATA SIZE    =    --------     --------
+  XHUGE-DATA SIZE  =    --------     --------
+C166 COMPILER V6.00, NUMBER1                                                               10/01/2021 10:38:29 PAGE 2   
+
+  IDATA-DATA SIZE  =    --------     --------
+  SDATA-DATA SIZE  =    --------     --------
+  BDATA-DATA SIZE  =    --------     --------
+  HUGE-DATA SIZE   =    --------     --------
+  BIT SIZE         =    --------     --------
+  INIT'L SIZE      =    --------     --------
+END OF MODULE INFORMATION.
+
+
+C166 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

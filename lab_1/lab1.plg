@@ -1,0 +1,102 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+D:\projects\ProgrammingIntegreatedDevice\lab_1\lab1.uv2
+Project File Date:  10/01/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling number1.c...
+number1.c(38): error C195: inline-asm: Invalid instruction operand(s)
+Target not created
+Build target 'Target 1'
+assembling START167.A66...
+compiling number1.c...
+number1.c(38): error C195: inline-asm: Invalid instruction operand(s)
+Target not created
+Build target 'Target 1'
+assembling START167.A66...
+compiling number1.c...
+linking...
+*** WARNING L22: CLASS RANGE NOT GIVEN IN INVOCATION LINE
+    CLASS:   NCODE
+Program Size: data=514(near=512) const=0(near=0) code=348
+"lab1" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling START167.A66...
+compiling number1.c...
+number1.c(48): error C195: inline-asm: Mnemonic expected
+number1.c(48): error C195: inline-asm: Mnemonic expected
+number1.c(48): error C195: inline-asm: Mnemonic expected
+number1.c(48): error C195: inline-asm: Mnemonic expected
+number1.c(48): error C195: inline-asm: Mnemonic expected
+number1.c(48): error C195: inline-asm: Mnemonic expected
+Target not created
+Build target 'Target 1'
+assembling START167.A66...
+compiling number1.c...
+linking...
+*** WARNING L22: CLASS RANGE NOT GIVEN IN INVOCATION LINE
+    CLASS:   NCODE
+Program Size: data=514(near=512) const=0(near=0) code=348
+"lab1" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling START167.A66...
+compiling number1.c...
+linking...
+L166 LINKER/LOCATER V5.20 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1991 - 2005
+"START167.obj",
+"number1.obj" 
+TO "lab1" 
+CLASSES (NDATA (0xE000-0xE7FF, 0xF600-0xFDFF), NDATA0 (0xE000-0xE7FF, 0xF600-0xFDFF), 
+SDATA (0xE000-0xE7FF, 0xF600-0xFDFF), SDATA0 (0xE000-0xE7FF, 0xF600-0xFDFF), 
+IDATA (0xF600-0xFDFF), IDATA0 (0xF600-0xFDFF), 
+FDATA (0xE000-0xE7FF, 0xF600-0xFDFF), FDATA0 (0xE000-0xE7FF, 0xF600-0xFDFF), 
+HDATA (0xE000-0xE7FF, 0xF600-0xFDFF), HDATA0 (0xE000-0xE7FF, 0xF600-0xFDFF), 
+XDATA (0xE000-0xE7FF, 0xF600-0xFDFF), XDATA0 (0xE000-0xE7FF, 0xF600-0xFDFF) , 
+NDATA(0x008000-0x00BFFF),
+NCODE(0x000000-0x003FFF),
+NCONST(0x000000-0x003FFF)) 
+*** FATAL ERROR L222: SECTION/CLASS/GROUP/REGBANK SPECIFIED MORE THAN ONCE
+    POS: 496
+    0XE7FF, 0XF600-0XFDFF), XDATA0 (0XE000-0XE7FF, 0XF600-0XFDFF), NDATA (#
+Target not created
+Build target 'Target 1'
+assembling START167.A66...
+compiling number1.c...
+linking...
+*** WARNING L22: CLASS RANGE NOT GIVEN IN INVOCATION LINE
+    CLASS:   NCODE
+Program Size: data=514(near=512) const=0(near=0) code=348
+"lab1" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling START167.A66...
+compiling number1.c...
+linking...
+L166 LINKER/LOCATER V5.20 - SN: Eval Version
+COPYRIGHT KEIL ELEKTRONIK GmbH 1991 - 2005
+"START167.obj",
+"number1.obj" 
+TO "lab1" 
+CLASSES (NDATA (0xE000-0xE7FF, 0xF600-0xFDFF), NDATA0 (0xE000-0xE7FF, 0xF600-0xFDFF), 
+SDATA (0xE000-0xE7FF, 0xF600-0xFDFF), SDATA0 (0xE000-0xE7FF, 0xF600-0xFDFF), 
+IDATA (0xF600-0xFDFF), IDATA0 (0xF600-0xFDFF), 
+FDATA (0xE000-0xE7FF, 0xF600-0xFDFF), FDATA0 (0xE000-0xE7FF, 0xF600-0xFDFF), 
+HDATA (0xE000-0xE7FF, 0xF600-0xFDFF), HDATA0 (0xE000-0xE7FF, 0xF600-0xFDFF), 
+XDATA (0xE000-0xE7FF, 0xF600-0xFDFF), XDATA0 (0xE000-0xE7FF, 0xF600-0xFDFF) , 
+NCODE(0x000000-0x003FFF) 
+*** FATAL ERROR L201: INVALID COMMAND LINE SYNTAX
+    POS: 517
+    DFF), XDATA0 (0XE000-0XE7FF, 0XF600-0XFDFF), NCODE (0X000000-0X003FFF)#
+Target not created
+Build target 'Target 1'
+assembling START167.A66...
+compiling number1.c...
+linking...
+*** WARNING L22: CLASS RANGE NOT GIVEN IN INVOCATION LINE
+    CLASS:   NCODE
+Program Size: data=514(near=512) const=0(near=0) code=348
+"lab1" - 0 Error(s), 1 Warning(s).

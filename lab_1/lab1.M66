@@ -1,0 +1,332 @@
+L166 LINKER/LOCATER V5.20                                                               10/01/2021  10:38:29  PAGE 1
+
+
+L166 LINKER/LOCATER V5.20, INVOKED BY:
+C:\KEIL\C166\BIN\L166.EXE START167.obj, number1.obj TO lab1 CLASSES (NDATA (0XE000-0XE7FF, 0XF600-0XFDFF), NDATA0 (0XE00
+>> 0-0XE7FF, 0XF600-0XFDFF), SDATA (0XE000-0XE7FF, 0XF600-0XFDFF), SDATA0 (0XE000-0XE7FF, 0XF600-0XFDFF), IDATA (0XF600-
+>> 0XFDFF), IDATA0 (0XF600-0XFDFF), FDATA (0XE000-0XE7FF, 0XF600-0XFDFF), FDATA0 (0XE000-0XE7FF, 0XF600-0XFDFF), HDATA (
+>> 0XE000-0XE7FF, 0XF600-0XFDFF), HDATA0 (0XE000-0XE7FF, 0XF600-0XFDFF), XDATA (0XE000-0XE7FF, 0XF600-0XFDFF), XDATA0 (0
+>> XE000-0XE7FF, 0XF600-0XFDFF))
+
+
+CPU TYPE:     C167 or derivative
+CPU MODE:     SEGMENTED
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  START167.obj (?C_STARTUP)
+         COMMENT TYPE 128: A166 V5.20
+  number1.obj (NUMBER1)
+         COMMENT TYPE 128: C166 V6.00
+  C:\KEIL\C166\LIB\C167S.LIB (?C_ENDINIT)
+         COMMENT TYPE 128: A166 V5.20
+
+
+INTERRUPT PROCEDURES OF MODULE:  lab1 (?C_STARTUP)
+
+
+INTERRUPT PROCEDURE                 INT  INTERRUPT NAME
+=======================================================
+?C_RESET                              0  RESET
+
+
+MEMORY MAP OF MODULE:  lab1 (?C_STARTUP)
+
+
+START     STOP      LENGTH    TYPE  RTYP  ALIGN  TGR  GRP  COMB  CLASS   SECTION NAME
+=====================================================================================
+000000H   000003H   000004H   ---   ---   ---    ---  ---  ---   * INTVECTOR TABLE *
+000004H   00003FH   00003CH   CODE  REL   WORD   ---    2  PUBL  NCODE   ?PR?NUMBER1
+000040H   00015FH   000120H   CODE  REL   WORD   ---  ---  PRIV  ICODE   ?C_STARTUP_CODE
+000160H   000161H   000002H   XDATA REL   WORD   ---  ---  GLOB  ---     ?C_INITSEC
+00E000H   00E1FFH   000200H   DATA  REL   WORD   ---    1  PUBL  NDATA   ?C_USERSTACK
+00FA00H   00FBFFH   000200H   ---   ---   ---    ---  ---  ---   * SYSTEM STACK *
+00FC00H   00FC1FH   000020H   DATA  ---   BYTE   ---  ---  ---   *REG*   ?C_MAINREGISTERS
+
+
+
+GROUP LIST OF MODULE:  lab1 (?C_STARTUP)
+
+
+GROUP NAME                           TYPE  TGR  GRP  CLASS       SECTION NAME
+=============================================================================
+NDATA                                DATA  ---    1  NDATA       ?C_USERSTACK
+
+NCODE                                CODE  ---    2  NCODE       ?PR?NUMBER1
+
+
+
+
+PUBLIC SYMBOLS OF MODULE:  lab1 (?C_STARTUP)
+L166 LINKER/LOCATER V5.20                                                             10/01/2021  10:38:29  PAGE 2
+
+
+
+
+      VALUE       PUBLIC SYMBOL NAME               REP   TGR  CLASS   SECTION
+      =======================================================================
+      000000H     ?C_CLRMEMSECSTART                VAR   ---  ---     ---
+      000160H     ?C_ENDINIT                       VAR   ---  ---     ?C_INITSEC
+      000160H     ?C_INITSECSTART                  VAR   ---  ---     ---
+000000001FFFC000H ?C_NCONSTBASE                    CONST ---  ---     ---
+000000001FFFFFFFH ?C_NCONSTBASESEG                 CONST ---  ---     ---
+      004000H     ?C_NDATABASE                     CONST ---  ---     ---
+      000000H     ?C_NDATABASESEG                  CONST ---  ---     ---
+      000000H     ?C_PAGEDPP0                      CONST ---  ---     ---
+      000000H     ?C_PAGEDPP1                      CONST ---  ---     ---
+      000003H     ?C_PAGEDPP2                      CONST ---  ---     ---
+      000040H     ?C_STARTUP                       LABEL ---  ICODE   ?C_STARTUP_CODE
+      00FA00H     ?C_SYSSTKBOT                     CONST ---  ---     ---
+      00FC00H     ?C_SYSSTKTOP                     CONST ---  ---     ---
+      00E000H     ?C_USRSTKBOT                     VAR   ---  NDATA   ?C_USERSTACK
+      000000H     RESET                            INTNO ---  ---     ---
+      000004H     main                             LABEL ---  NCODE   ?PR?NUMBER1
+
+
+
+SYMBOL TABLE OF MODULE:  lab1 (?C_STARTUP)
+
+      VALUE       TYPE      REP       LENGTH  TGR   SYMBOL NAME
+      =========================================================
+      000040H     PUBLIC    LABEL     ---     ---   ?C_STARTUP
+      00E000H     PUBLIC    VAR       ---     ---   ?C_USRSTKBOT
+      00FA00H     PUBLIC    CONST     ---     ---   ?C_SYSSTKBOT
+      00FC00H     PUBLIC    CONST     ---     ---   ?C_SYSSTKTOP
+      000000H     GLOBAL    INTNO     ---     ---   RESET
+      000000H     SYMBOL    RBANK     ---     ---   ?C_MAINREGISTERS
+      00E200H     SYMBOL    VAR       ---     ---   ?C_USERSTKTOP
+      000000H     SYMBOL    CONST     ---     ---   BCON0H
+      00002EH     SYMBOL    CONST     ---     ---   BCON0L
+      00FF0CH     SYMBOL    SFR       ---     ---   BUSCON0
+      00FE10H     SYMBOL    SFR       ---     ---   CP
+      00FE00H     SYMBOL    SFR       ---     ---   DPP0
+      00FE02H     SYMBOL    SFR       ---     ---   DPP1
+      00FE04H     SYMBOL    SFR       ---     ---   DPP2
+      00FE06H     SYMBOL    SFR       ---     ---   DPP3
+      00FE14H     SYMBOL    SFR       ---     ---   STKOV
+      00FF12H     SYMBOL    SFR       ---     ---   SYSCON
+      00FB6FH     SYMBOL    CONST     ---     ---   SYS_BITS
+      000000H     SYMBOL    CONST     ---     ---   SYS_H
+      000000H     SYMBOL    CONST     ---     ---   SYS_L
+      000200H     SYMBOL    CONST     ---     ---   USTSZ
+      000000H     SYMBOL    CONST     ---     ---   _ALECTL0
+      000000H     SYMBOL    CONST     ---     ---   _BDRSTEN
+      00FA00H     SYMBOL    CONST     ---     ---   _BOS
+      000000H     SYMBOL    CONST     ---     ---   _BYTDIS
+      000000H     SYMBOL    CONST     ---     ---   _CLKEN
+      000000H     SYMBOL    CONST     ---     ---   _CSCFG
+      000000H     SYMBOL    CONST     ---     ---   _CSREN0
+      000000H     SYMBOL    CONST     ---     ---   _CSWEN0
+      000001H     SYMBOL    CONST     ---     ---   _MCTC0
+L166 LINKER/LOCATER V5.20                                                             10/01/2021  10:38:29  PAGE 3
+
+
+      000001H     SYMBOL    CONST     ---     ---   _MTTC0
+      000000H     SYMBOL    CONST     ---     ---   _PWDCFG
+      000000H     SYMBOL    CONST     ---     ---   _RDYEN0
+      000000H     SYMBOL    CONST     ---     ---   _RDY_AS0
+      000000H     SYMBOL    CONST     ---     ---   _ROMS1
+      000000H     SYMBOL    CONST     ---     ---   _RWDC0
+      000000H     SYMBOL    CONST     ---     ---   _SGTDIS
+      000000H     SYMBOL    CONST     ---     ---   _STKSZ
+      000001H     SYMBOL    CONST     ---     ---   _STKSZ1
+      00FC00H     SYMBOL    CONST     ---     ---   _TOS
+      000000H     SYMBOL    CONST     ---     ---   _VISIBLE
+      000000H     SYMBOL    CONST     ---     ---   _XPEN
+      000000H     SYMBOL    CONST     ---     ---   _XPERSHARE
+
+      000040H     BLOCK     LVL=0     0120H   ---   ?C_RESET
+      000040H     LINE      ---       ---     ---   #669
+      000044H     LINE      ---       ---     ---   #691
+      000048H     LINE      ---       ---     ---   #692
+      00004CH     LINE      ---       ---     ---   #718
+      000050H     LINE      ---       ---     ---   #719
+      000054H     LINE      ---       ---     ---   #818
+      000058H     LINE      ---       ---     ---   #828
+      00005CH     LINE      ---       ---     ---   #830
+      000060H     LINE      ---       ---     ---   #831
+      000064H     LINE      ---       ---     ---   #835
+      000068H     LINE      ---       ---     ---   #836
+      00006CH     LINE      ---       ---     ---   #841
+      000070H     LINE      ---       ---     ---   #895
+      000074H     LINE      ---       ---     ---   #896
+      000078H     LINE      ---       ---     ---   #897
+      00007AH     LINE      ---       ---     ---   #898
+      00007CH     LINE      ---       ---     ---   #899
+      00007EH     LINE      ---       ---     ---   #905
+      000080H     LINE      ---       ---     ---   #906
+      000082H     LINE      ---       ---     ---   #907
+      000084H     LINE      ---       ---     ---   #908
+      000086H     LINE      ---       ---     ---   #909
+      000088H     LINE      ---       ---     ---   #910
+      00008AH     LINE      ---       ---     ---   #911
+      00008CH     LINE      ---       ---     ---   #912
+      000090H     LINE      ---       ---     ---   #913
+      000094H     LINE      ---       ---     ---   #915
+      000096H     LINE      ---       ---     ---   #916
+      000098H     LINE      ---       ---     ---   #917
+      00009AH     LINE      ---       ---     ---   #918
+      00009EH     LINE      ---       ---     ---   #919
+      0000A0H     LINE      ---       ---     ---   #920
+      0000A2H     LINE      ---       ---     ---   #921
+      0000A4H     LINE      ---       ---     ---   #922
+      0000A6H     LINE      ---       ---     ---   #923
+      0000A8H     LINE      ---       ---     ---   #924
+      0000AAH     LINE      ---       ---     ---   #925
+      0000ACH     LINE      ---       ---     ---   #926
+      0000AEH     LINE      ---       ---     ---   #927
+      0000B0H     LINE      ---       ---     ---   #929
+      0000B2H     LINE      ---       ---     ---   #930
+      0000B4H     LINE      ---       ---     ---   #935
+L166 LINKER/LOCATER V5.20                                                             10/01/2021  10:38:29  PAGE 4
+
+
+      0000B6H     LINE      ---       ---     ---   #936
+      0000B8H     LINE      ---       ---     ---   #937
+      0000BAH     LINE      ---       ---     ---   #938
+      0000BCH     LINE      ---       ---     ---   #939
+      0000C0H     LINE      ---       ---     ---   #940
+      0000C2H     LINE      ---       ---     ---   #941
+      0000C4H     LINE      ---       ---     ---   #942
+      0000C6H     LINE      ---       ---     ---   #948
+      0000C8H     LINE      ---       ---     ---   #949
+      0000CAH     LINE      ---       ---     ---   #950
+      0000CCH     LINE      ---       ---     ---   #951
+      0000CEH     LINE      ---       ---     ---   #952
+      0000D0H     LINE      ---       ---     ---   #1013
+      0000D4H     LINE      ---       ---     ---   #1014
+      0000D8H     LINE      ---       ---     ---   #1020
+      0000DCH     LINE      ---       ---     ---   #1021
+      0000DEH     LINE      ---       ---     ---   #1022
+      0000E0H     LINE      ---       ---     ---   #1023
+      0000E2H     LINE      ---       ---     ---   #1024
+      0000E4H     LINE      ---       ---     ---   #1025
+      0000E6H     LINE      ---       ---     ---   #1026
+      0000EAH     LINE      ---       ---     ---   #1027
+      0000ECH     LINE      ---       ---     ---   #1028
+      0000F0H     LINE      ---       ---     ---   #1029
+      0000F2H     LINE      ---       ---     ---   #1030
+      0000F4H     LINE      ---       ---     ---   #1031
+      0000F6H     LINE      ---       ---     ---   #1032
+      0000F8H     LINE      ---       ---     ---   #1033
+      0000FAH     LINE      ---       ---     ---   #1034
+      0000FCH     LINE      ---       ---     ---   #1035
+      0000FEH     LINE      ---       ---     ---   #1036
+      000100H     LINE      ---       ---     ---   #1037
+      000102H     LINE      ---       ---     ---   #1038
+      000104H     LINE      ---       ---     ---   #1039
+      000108H     LINE      ---       ---     ---   #1040
+      00010CH     LINE      ---       ---     ---   #1041
+      00010EH     LINE      ---       ---     ---   #1042
+      000110H     LINE      ---       ---     ---   #1043
+      000112H     LINE      ---       ---     ---   #1044
+      000114H     LINE      ---       ---     ---   #1045
+      000116H     LINE      ---       ---     ---   #1046
+      000118H     LINE      ---       ---     ---   #1047
+      00011AH     LINE      ---       ---     ---   #1048
+      00011CH     LINE      ---       ---     ---   #1049
+      00011EH     LINE      ---       ---     ---   #1050
+      000120H     LINE      ---       ---     ---   #1051
+      000124H     LINE      ---       ---     ---   #1052
+      000128H     LINE      ---       ---     ---   #1053
+      00012CH     LINE      ---       ---     ---   #1054
+      000130H     LINE      ---       ---     ---   #1059
+      000132H     LINE      ---       ---     ---   #1060
+      000134H     LINE      ---       ---     ---   #1061
+      000138H     LINE      ---       ---     ---   #1062
+      00013AH     LINE      ---       ---     ---   #1063
+      00013CH     LINE      ---       ---     ---   #1064
+      00013EH     LINE      ---       ---     ---   #1066
+      000140H     LINE      ---       ---     ---   #1067
+L166 LINKER/LOCATER V5.20                                                             10/01/2021  10:38:29  PAGE 5
+
+
+      000142H     LINE      ---       ---     ---   #1068
+      000146H     LINE      ---       ---     ---   #1069
+      000148H     LINE      ---       ---     ---   #1070
+      00014AH     LINE      ---       ---     ---   #1071
+      00014CH     LINE      ---       ---     ---   #1072
+      000150H     LINE      ---       ---     ---   #1073
+      000152H     LINE      ---       ---     ---   #1074
+      000154H     LINE      ---       ---     ---   #1075
+      000156H     LINE      ---       ---     ---   #1076
+      000158H     LINE      ---       ---     ---   #1077
+      00015AH     LINE      ---       ---     ---   #1078
+      00015CH     LINE      ---       ---     ---   #1167
+      00015CH     SYMBOL    LABEL     ---     ---   EndInit
+      000158H     SYMBOL    LABEL     ---     ---   StoreBit
+      000156H     SYMBOL    LABEL     ---     ---   SetBit
+      00013EH     SYMBOL    LABEL     ---     ---   InitBit
+      000130H     SYMBOL    LABEL     ---     ---   NoDPP3Adj
+      000114H     SYMBOL    LABEL     ---     ---   CopyInitVal
+      0000FCH     SYMBOL    LABEL     ---     ---   LenLoad
+      0000D8H     SYMBOL    LABEL     ---     ---   RepeatInit
+      0000D0H     SYMBOL    LABEL     ---     ---   Init_Vars
+      0000D0H     SYMBOL    LABEL     ---     ---   EndClear
+      0000C6H     SYMBOL    LABEL     ---     ---   ClearNear
+      0000B4H     SYMBOL    LABEL     ---     ---   RepClearFar
+      0000B0H     SYMBOL    LABEL     ---     ---   ClearFar
+      000094H     SYMBOL    LABEL     ---     ---   ClearBit
+      00007EH     SYMBOL    LABEL     ---     ---   RepeatClear
+      000070H     SYMBOL    LABEL     ---     ---   Clr_Memory
+      ---         BLOCKEND  LVL=0     ---     ---   
+      000004H     GLOBAL    LABEL     ---     ---   main
+
+      000004H     BLOCK     LVL=0     003CH   ---   main
+      000004H     LINE      ---       ---     ---   #5
+      000004H     LINE      ---       ---     ---   #9
+      000006H     LINE      ---       ---     ---   #10
+      000008H     LINE      ---       ---     ---   #11
+      00000AH     LINE      ---       ---     ---   #12
+      00000CH     LINE      ---       ---     ---   #13
+      00000EH     LINE      ---       ---     ---   #14
+      000010H     LINE      ---       ---     ---   #15
+      000012H     LINE      ---       ---     ---   #16
+      000014H     LINE      ---       ---     ---   #17
+      000016H     LINE      ---       ---     ---   #18
+      000018H     LINE      ---       ---     ---   #19
+      00001AH     LINE      ---       ---     ---   #20
+      00001CH     LINE      ---       ---     ---   #21
+      00001EH     LINE      ---       ---     ---   #22
+      000020H     LINE      ---       ---     ---   #23
+      000022H     LINE      ---       ---     ---   #24
+      000024H     LINE      ---       ---     ---   #25
+      000024H     LINE      ---       ---     ---   #26
+      000026H     LINE      ---       ---     ---   #27
+      000028H     LINE      ---       ---     ---   #28
+      00002AH     LINE      ---       ---     ---   #29
+      00002CH     LINE      ---       ---     ---   #30
+      00002EH     LINE      ---       ---     ---   #32
+      000030H     LINE      ---       ---     ---   #34
+L166 LINKER/LOCATER V5.20                                                             10/01/2021  10:38:29  PAGE 6
+
+
+      000032H     LINE      ---       ---     ---   #36
+      000034H     LINE      ---       ---     ---   #38
+      000038H     LINE      ---       ---     ---   #40
+      00003AH     LINE      ---       ---     ---   #42
+      00003EH     LINE      ---       ---     ---   #44
+      ---         BLOCKEND  LVL=0     ---     ---   
+      000160H     PUBLIC    VAR       ---     ---   ?C_ENDINIT
+
+
+
+FUNCTION REGISTER MASKS
+
+
+FUNCTION . . . . . . REG MASK
+=============================
+
+
+
+
+*** WARNING L22: CLASS RANGE NOT GIVEN IN INVOCATION LINE
+    CLASS:   NCODE
+
+******************************************************************************
+* RESTRICTED VERSION WITH 1000H BYTE CODE SIZE LIMIT; USED: 015CH BYTE ( 8%) *
+******************************************************************************
+
+Program Size: data=514(near=512) const=0(near=0) code=348
+L166 RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)
